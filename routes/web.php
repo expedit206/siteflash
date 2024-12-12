@@ -14,8 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', [RoomController::class, 'index'])->name('room.accueil');
-Route::get('/', [RoomController::class, 'about'])->name('room.accueil');
+Route::get('/', [RoomController::class, 'index'])->name('room.accueil');
 Route::get('/A-Propos', [RoomController::class, 'about'])->name('room.about');
 Route::get('/services', [RoomController::class, 'service'])->name('room.service');
 Route::get('/contact', [RoomController::class, 'contact'])->name('room.contact');
